@@ -1,0 +1,21 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.img{
+    justify-content: space-around;
+}
+.Button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+
+}
+.canvas{
+    box-shadow: black 20px 10px 50px;
+}

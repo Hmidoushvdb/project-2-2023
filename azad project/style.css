@@ -1,0 +1,46 @@
+/*----achtergrond kleur--*/
+body {
+    background-color: #CCC;
+  }
+  /*---zet de emoji knoppen gecentered-*/
+  .selections {
+    display: flex;
+    justify-content: center;
+  }
+  /*--design en laat transities zien van buttons--*/
+  .selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+  }
+  /*---laat de emojis vergroten als je erop klikt--*/
+  .selection:hover {
+    transform: scale(1.2);
+  }
+  /*----resultaten bord laat hij centeren--*/
+  .results {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  /*-----resultaten score design-*/
+  .result-score {
+    margin-left: .1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  /*---maakt de winnaar score beetje meer doorzichtig--*/
+  .result-selection {
+    opacity: .5;
+  }
+  /*--design voor de selectie van score--*/
+  .result-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+  }
