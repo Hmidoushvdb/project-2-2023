@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ik hebhierzo de kleur op de achtergrond gegeven als je wint */
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+/*hier kan je de bord veranderen van boter kaan en eieren*/
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #37505C;
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+/*dit is de grote en breedte hoogte van de boxen van mijn game*/
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+/* dit hebben ik gedaan om de randen weg te krijgen zoals je ziet bij mij in de game*/
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+/*dit gedeelte is voor de restart button als ik er op sta de restart knop dan geeft die een kleine effect dat die omhoog gaat*/
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}

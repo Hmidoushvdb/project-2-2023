@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Portfolio hamza"
+	},
+	{
+		"path": "../../../Downloads/menu"
+	},
+	{
+		"path": "../../../Downloads/Sticky-Nav"
+	},
+	{
+		"path": "../../../Downloads/Personal-portfolio"
+	},
+	{
+		"path": "../Portfolio azads"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Project + portfolio akram"
+  }
+}
