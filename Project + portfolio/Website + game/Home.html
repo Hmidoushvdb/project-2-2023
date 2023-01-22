@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style iedereen.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav id="navbar">
+            <img src="images/Logo Akram.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Over mij.html">Over mij</a></li>
+                <li><a href="Doel.html">Doel</a></li>
+                <li><a href="Favoriete games.html">Favoriete games</a></li>
+                <li><a href="Snake2.html">Snake</a></li>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </ul>
+            <i class="fas fa-bars"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student aan het TCR</p>
+            <h1>Hey, Ik ben<span><br>Akram Daidoune</span><br></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------Project---------- -->
+<div id="over mij">
+    <div class="container">
+        <div class="row">
+            <div class="over-col-1">
+                <img src="images/project.jpg">
+            </div>
+            <div class="over-col-2">
+                <h1 class="sub-title">Project</h1>
+                <br>
+                <p>Ik ben Akram Daidoune en ik zit op het techniek college Rotterdam,de opleiding software development leerjaar 1.
+                    <br> </p>
+                    <br>
+                    <br>
+                <p> Ik maak het project "Javascript game" samen met de heer Hamza Taha en Azad Adkin.</p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- ---------Wat ik ga laten zien---------------- -->
+<div id="Laten zien">
+    <div class="container">
+        <h1 class="sub-title">Wat gaan wij laten zien.</h1>
+        <div class="Laten-zien-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>De Website</h2>
+                <p>Je bekijkt nu de gemaakte website voor de Javascript game.</p>
+            </div>
+            <div>
+                <i class="fa-xbox"></i>
+                <h2>De game</h2>
+                <p>Ik heb gekozen voor de game snake, omdat ik dat in mijn jeugd het erg heel leuk vond. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Neem contact met mij op</h1>
+                <p><i class="fas fa-paper-plane"></i> akramito2017@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 31-0684975682</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/akram-daidoune-bb954224b//" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV Akram Daidoune.pdf" download class="btn btn2">Download mijn CV</a>
+            </div>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+<footer>    
+<div class="copyright">
+        <p>Copyright © gemaakt door Akram Daidoune </p>
+    </div>
+</div>
+</footer>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabnme){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+
+
+</script>
+</body>
+</html>

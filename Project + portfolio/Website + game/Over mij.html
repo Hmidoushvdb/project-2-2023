@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style iedereen.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <img src="images/Logo Akram.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Over mij.html">Over mij</a></li>
+                    <li><a href="Doel.html">Doel</a></li>
+                    <li><a href="Favoriete games.html">Favoriete games</a></li>
+                    <li><a href="Snake2.html">Snake</a></li>
+                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+    
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Over<span><br>mij</span><br></h1>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------over mij---------- -->
+<div id="over mij">
+    <div class="container">
+        <div class="row">
+            <div class="over-col-1">
+                <img src="images/Akram burger.jpeg">
+            </div>
+            <div class="over-col-2">
+                <h1 class="sub-title">Over mij</h1>
+                <br>
+                <p>Ik ben Akram Daidoune en ik zit op het techniek college Rotterdam,de opleiding software development leerjaar 1.
+                    <br> </p>
+                
+                    
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Vaardigheden</p>
+                    <p class="tab-links" onclick="opentab('ervaring')">Werkervaring</p>
+                    <p class="tab-links" onclick="opentab('studie')">Studie</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Html en css</span><br>Website development</li>
+                        <li><span>Javascript</span><br>Website Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="ervaring">
+                    <ul>
+                        <li><span>2022 - Heden</span><br>Ik ben behulpzaam op de werkvloer als vulploegmedewerker zowel
+                            als assistent teamleider.'Als de teamleider afwezig neem ik de
+                            leiding over om de winkel zo netjes mogelijk achter te laten voor de
+                            volgende dag.</li>
+                        <li><span>2022 - Heden</span><br>Ik bent continu met mensen in gesprek op verschillende locaties in de regio om een goed doel te promoten ,Bijvoorbeeld in een drukke winkelstraat of aan de deur.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="studie">
+                    <ul>
+                        <li><span>2022-heden</span><br>Software development leerjaar 1 leerzaam op het techniek college Rotterdam.</li>
+                        <li><span>2019-2022</span><br>Vmbo-TL diploma behaald.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+<div class="copyright">
+    <p>Copyright © gemaakt door Akram Daidoune </p>
+</div>
+</div>
+</footer>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+
+
+</script>
+
+    
+</body>
+</html>

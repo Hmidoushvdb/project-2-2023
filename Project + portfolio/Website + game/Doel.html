@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style iedereen.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <img src="images/Logo Akram.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Over mij.html">Over mij</a></li>
+                    <li><a href="Doel.html">Doel</a></li>
+                    <li><a href="Favoriete games.html">Favoriete games</a></li>
+                    <li><a href="Snake2.html">Snake</a></li>
+                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+    
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Doel<span><br>Van het project</span><br></h1>
+            </div>
+        </div>
+    </div>
+<!--Doel van het project------>
+ <div id="Favoriete games">
+        <div class="container">
+            <div class="row">
+                <div class="over-col-1">
+                    <img src="images/Javascript_Logo.png">
+                </div>
+                <br>
+                <br>
+                <div class="over-col-2">
+                    <h1 class="sub-title">Het doel</h1>
+                    <br>
+                <p>Het doel van dit project is om scoiaal te ontwikkelen met je gekozen partners en samen een goed resulaat boeken</p>
+                <br>
+                <br>
+                <p> In de afgelopen tien weken hebben wij de progameertaal "Javascript" bestudeerd en beoefend.<br>
+                     En deze met deze kennis hebben wij indivudeel een game ontwikkeld.</p>    <br><br>
+                </div>
+<br>
+<br>
+<br>
+
+<!--Het resulaat---->
+<div id="Favoriete games">
+                    <div class="container">
+                        <div class="row">
+                            <div class="over-col-1">
+                                <img src="images/java game.png">
+                            </div>
+                            <div class="over-col-2">
+                                <h1 class="sub-title">Het resulaat</h1>
+                               <br>
+                                <br>
+                     <p>Het resulaat is de prachtige website die u bekijkt met een link naar de gemaakte javascrip game die ook gelijk spelbaar is.</p>
+</body>
+ <br>
+ <br>
+ <br>
+ <br>   
+</html>
+
+<footer>
+<div class="copyright">
+    <p>Copyright © gemaakt door Akram Daidoune </p>
+</div>
+</footer>
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</html>

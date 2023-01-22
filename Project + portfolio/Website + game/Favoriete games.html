@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style iedereen.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav id="navbar">
+            <img src="images/Logo Akram.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Over mij.html">Over mij</a></li>
+                <li><a href="Doel.html">Doel</a></li>
+                <li><a href="Favoriete games.html">Favoriete games</a></li>
+                <li><a href="Snake2.html">Snake</a></li>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </ul>
+            <i class="fas fa-bars"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Favoriete<span><br>Games</span><br></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------Favoriete games---------- -->
+<div id="Favoriete games">
+    <div class="container">
+        <div class="row">
+            <div class="over-col-1">
+                <img src="images/Fifa 23.jpg">
+            </div>
+            <div class="over-col-2">
+                <h1 class="sub-title">Fifa 23</h1>
+                <br>
+                <p>EA SPORTS™ FIFA 23 brengt The World's Game naar het veld, met zowel het heren- als damestoernooi van de FIFA World Cup™, de toevoeging van damesclubteams en nieuwe manieren om je favoriete speltypes te spelen.
+                    <br>
+                    <br>
+                    <br>
+
+                    Speel het herentoernooi van de FIFA World Cup™ nu in FIFA 23, terwijl het damestoernooi van de FIFA World Cup™ later als update na de release uitkomt. En speel voor het eerst ooit met damesclubteams en geniet van cross-playfunctionaliteit die het makkelijker maakt om tegen vrienden* te spelen.
+                    <br>
+                    <br>
+                    <br>
+                    Geniet van een nieuwe manier van spelen en stel je droomselectie samen met FUT Moments en een opnieuw ontworpen Teamgeestsysteem in FIFA Ultimate Team™, of laat je voetbaldromen uitkomen in het speltype Carrière waarbij je je persoonlijkheid bepaalt als speler of je als manager aan de slag gaat zoals sommige van de grootste namen uit het voetbal.<a href="https://store.playstation.com/nl-nl/product/EP0006-CUSA31873_00-FIFAFOOTBALL2023" target="_blank"> Lees meer</a>
+                    <br> 
+                    <br>
+                    <br>
+                    <br> 
+                    </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Favoriete games">
+    <div class="container">
+        <div class="row">
+            <div class="over-col-1">
+                <img src="images/uncharted 4.jpg">
+            </div>
+            <div class="over-col-2">
+                <h1 class="sub-title">Uncharted 4</h1>
+                <br>
+                <p>Drie jaar na de gebeurtenissen van UNCHARTED 3: Drake's Deception, heeft Nathan Drake besloten zijn dagen als schatzoeker achter zich te laten. Maar al snel klopt het lot op de deur. Sam, de broer van Nate, is in levensgevaar en heeft dringend hulp nodig. Hij biedt Drake een avontuur waartegen hij geen nee kan zeggen.  
+                   <br> 
+                   <br>
+                   <br>
+                Sam en Drake gaan op zoek naar de verloren schat van kapitein Henry Avery. Ze zoeken naar Libertalia, het piratenparadijs in de bossen van Madagaskar. UNCHARTED 4: A Thief's End neemt je mee op een reis om de wereld door jungles, verre steden en besneeuwde bergtoppen, op zoek naar het fortuin van Avery<a href="https://www.playstation.com/nl-nl/games/uncharted-4-a-thiefs-end/" target="_blank">Lees meer</a></p>
+            <br>
+            <br>
+            <br>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Favoriete games">
+    <div class="container">
+        <div class="row">
+            <div class="over-col-1">
+                <img src="images/Gta 5.jpg">
+            </div>
+            <div class="over-col-2">
+                <h1 class="sub-title">Gta V</h1>
+                <br>
+            <p>Speel de blockbusterhits Grand Theft Auto V en GTA Online - nu verbeterd voor de PlayStation 5 met verbluffende beelden, snellere laadtijden, adaptieve triggers, haptische feedback, Tempest 3D-audio en nog veel meer, plus exclusieve content voor GTA Online-spelers.<a href="https://www.playstation.com/nl-nl/games/grand-theft-auto-v/" target="_blank">Lees meer</a></p>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="copyright">
+        <p>Copyright © gemaakt door Akram Daidoune </p>
+    </div>
+</div>
+</footer>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabnme){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+
+
+</script>
+</body>
+</html>
